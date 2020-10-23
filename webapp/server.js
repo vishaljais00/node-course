@@ -7,16 +7,16 @@ var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs');
-  app.use(express.static(__dirname + '/public')); // accessing the public folder
+app.use(express.static(__dirname + '/public')); // accessing the public folder
 
-app.use((req, res, next) =>{
+app.use((req, res, next) => {
 
     var now = new Date().toString();
-    
-    var log =`${now}: ${req.method}: ${req.url}`;
+
+    var log = `${now}: ${req.method}: ${req.url}`;
     console.log(log)
-    fs.appendFile('server.log' , log + '\n' , (err) =>{
-        if(err){
+    fs.appendFile('server.log', log + '\n', (err) => {
+        if (err) {
             console.log('unable to append to server.log')
         }
     })
@@ -34,6 +34,7 @@ hbs.registerHelper('getCurrentyear', () => {
 
     return new Date().getFullYear()
 });
+
 
 hbs.registerHelper('Scream', (text) => {
 
@@ -60,6 +61,15 @@ app.get('/about', (req, res) => {
     });
 
 });
+
+app.get('/project', (req, res) => {
+
+    res.render('project.hbs', {
+
+        pageTitle: 'Project page',
+
+    });
+})
 
 app.get('/bad', (req, res) => {
 

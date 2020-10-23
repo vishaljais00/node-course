@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#logo p{
+
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 14px;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-weight: bolder;
+    font-size: larger;
+
+    
+}
+#logo img{
+    height: 42px;
+    width: 78px;
+    float: left;
+}
+
+
+#navbar{
+
+    background-color: rgb(226 11 11);
+    padding: 9px 4px;
+    font-family: 'Bad Script', cursive;
+}
+
+#navbar ul{
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 6px 49px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+#navbar li a:hover {
+    text-decoration: none;
+    padding: 6px 49px;
+    font-weight: bold;
+    color: black;
+    background-color: azure;
+    border: 0px solid;
+    border-radius: 20px;
+    font-size: 23px;
+}
+
+
+#navbar li{
+    list-style: none;
+}
+
+#introsection{
+
+    height: 450px;
+    background: center / cover no-repeat url("../static/images/bg1.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    z-index: -1;
+    font-family: 'Chewy', cursive;
+    font-size: 45px;
+          
+}
+
+#missionsection{
+
+    height: 300px;
+    font-family: 'Chewy', cursive;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 35px;
+    width: 80%;
+    display: block;
+    
+}
+#missionsection h3{
+
+    padding-top: 25px;
+    text-align: center ;
+    font-size: 30px;
+  
+}
+
+.card{
+
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 28%;
+    margin: 23px 22px;
+    height: 210px;
+    display: inline-block;
+    background-color: #e20b0b0f;
+    
+}
+
+.card p{
+
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img {
+    height: 145px;
+    padding : 0px 14px
+}
+.card-img img{
+    height: inherit;
+    padding : 0px 14px
+}
+
+
+#sponcersection{
+
+    height: 300px;
+    font-family: 'Chewy', cursive;
+    margin: 0;
+    padding: 0;
+    background-color : #fdf1f1
+    
+}
+#sponcersection h3{
+   
+    padding-top: 25px;
+    text-align: center ;
+    font-size: 30px;
+}
+
+#sponcer{
+
+    height: 200px;
+    max-width: 1000px;
+    margin: auto
+}
+.spimage{
+
+    height: 81%;
+    margin: 30px;
+}
+
+#footer{
+
+    height: 40px;
+    border: 2px solid red;
+    background-color: #e20b0b63;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 17px;
+}
+

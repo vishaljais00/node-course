@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content
+  section#introsection
+    div  Welcome to the dance academy
+    div  Keep practicing
+  section#missionsection
+    h3  Our mission 
+    .card
+      p Jazz
+      .card-box
+        .card-img
+          img(src='../static/images/img1.png' alt='')
+        .card-content
+          p  this is the best dance academy 
+    .card
+      p Hip-Hop 
+      .card-box
+        .card-img
+          img(src='../static/images/img2.jpg' alt='')
+        .card-content
+          p  this is the best dance academy 
+    .card
+      p  Salsa 
+      .card-box
+        .card-img
+          img(src='../static/images/img3.png' alt='')
+        .card-content
+          p  this is the best dance academy 
+  section#sponcersection
+    h3  Section for sponcer 
+    #sponcer
+      img.spimage(src='../static/images/sponcer1.png' alt='')
+      img.spimage(src='../static/images/sponcer2.png' alt='')
+      img.spimage(src='../static/images/sponcer3.png' alt='')
+      img.spimage(src='../static/images/sponcer4.png' alt='')      
